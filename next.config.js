@@ -1,18 +1,16 @@
-const { hostname } = require('os')
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-            remotePatterns:[
-            {
-                protocol: 'https',
-                hostname: 'media.licdn.com'
-            },
-        ],
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "media.licdn.com",
+        },
+      ],
     },
-    experimental:{
-        serverActions: true
+    experimental: {
+      serverActions: true,
     },
-};
-
-module.exports = nextConfig
+  };
+  
+  module.exports = nextConfig;

@@ -35,12 +35,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Classes Preparatoires aux Grandes Ecoles",
+    location: "Lyon, FR",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Preparatory classes to access the highest business school. 2 year with emphasis in Geopolitics, Maths, Philosophy and Languages",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2017 - 2019",
+  },
+  {
+    title: "Master in Management at Audencia Business School",
+    location: "Nantes, FR",
+    description:
+      "I graduated a master in Management with a speciality in Corporate Finance from the 6th Business School in France",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2023",
   },
   {
     title: "Front-End Developer",
