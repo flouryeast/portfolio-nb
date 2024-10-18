@@ -77,10 +77,7 @@ export default function Intro() {
             <a className='bg-white  text-gray-700 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack  dark:bg-white/10 dark:text-white/60' href="https://www.linkedin.com/in/noe-bernard/" target="_blank">
                 <BsLinkedin />
             </a>
-            <a className='bg-white  text-gray-700 hover:text-gray-950 p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack  dark:bg-white/10  dark:text-white/60'
-            href='https://github.com/flouryeast' target='_blank'>
-                <FaGithubSquare />
-            </a>
+          
           </motion.div>
     </section>
   )
