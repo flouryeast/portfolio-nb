@@ -17,13 +17,14 @@ export default function About() {
     id="about">
         <SectionHeading>About me</SectionHeading>
         
-          <p className="mb-3">
-              After graduating with a degree in <span className="font-medium">Management</span> from <span className="font-medium">Audencia Business School</span> with a focus on <span className="font-medium">Corporate Finance</span>, I began my career in strategy and finance projects at companies like <span className="font-medium">L'Oréal</span> and <span className="font-medium">Saint Laurent</span>. My passion for data and startups led me to work at <span className="font-medium">Project A</span>, a VC-funds, and <span className="font-medium">Milano Vice</span> in Berlin, where I honed my skills in leveraging data for strategic insights. Today, I specialize in approaching data from a strategic perspective, utilizing tools like <span className="font-medium">Google BigQuery (GBQ)</span>, <span className="font-medium">dbt</span>, <span className="font-medium">Metabase</span>, <span className="font-medium">Looker Studio</span>, <span className="font-medium">Power BI</span>, and <span className="font-medium">Google Apps Script</span>.
-          </p>
+      <p className="mb-3">
+        After earning my <span className="font-medium">Master in Management</span> with a focus on <span className="font-medium">Corporate Finance</span> from <span className="font-medium">Audencia Business School</span>, I jumped into the world of strategy and data. My journey has taken me from various start-ups like <span className="font-medium">Milano Vice</span> to VC funds like <span className="font-medium">Project A Ventures</span>. I turned fulltime freelance in 2023 and since then had the opportunity to work with various <span className="font-medium">Luxe Corporates</span>, data projects for funds or latly co-lead a <span className="font-medium">M&A sell side</span> process.
+      </p>
 
-          <p>
-              <span className="italic">When I'm not diving into data</span>, I enjoy exploring the latest tech trends, reading about business strategy, and spending time in the vibrant city of Berlin. I'm always eager to learn and grow, constantly seeking out new tools and methods to enhance my approach to data and strategy. Currently, I'm focusing on expanding my knowledge in <span className="font-medium">web-app development</span> and <span className="font-medium">automated data workflows</span> in order to master the full pipeline.
-          </p>
+      <p>
+        <span className="italic">When I'm not deep into data</span>, I love to travel—like my recent motorcycle adventure from Colombia to Uruguay. I also enjoy playing and discovering new musics. <br></br> I’m currently diving into <span className="font-medium">web-app development</span> and <span className="font-medium">automated data workflows</span> to master the entire data pipeline.
+      </p>
+
 
 
         

@@ -1,10 +1,14 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { FaPlane } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import buildingImg from "@/public/building.jpg";
+import headHuntingImg from '@/public/headhunting.jpg';
+import oneClickImg from '@/public/onclick.jpg';
+import salesPlanningImg from '@/public/salesplanning.jpg';
+import whatAppImg from '@/public/whatsapp.jpg'
 
 export const links = [
   {
@@ -35,81 +39,139 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Classes Preparatoires aux Grandes Ecoles",
+    title: "Classe Préparatoire ECS",
+    company: "Lycée Ampère",
     location: "Lyon, FR",
-    description:
-      "Preparatory classes to access the highest business school. 2 year with emphasis in Geopolitics, Maths, Philosophy and Languages",
+    description: 
+      "Engaged in preparatory classes for business school, emphasizing Geopolitics, Mathematics, Philosophy, and Languages.",
     icon: React.createElement(LuGraduationCap),
     date: "2017 - 2019",
   },
   {
-    title: "Master in Management at Audencia Business School",
+    title: "Master in Management",
+    company: "Audencia Business School",
     location: "Nantes, FR",
-    description:
-      "I graduated a master in Management with a speciality in Corporate Finance from the 6th Business School in France",
+    description: 
+      "Graduated with a specialization in Corporate Finance, completing relevant coursework in Financial Planning, Firm Valuation, and Data Analytics.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Strategy Consultant",
+    company: "OMS",
+    location: "Paris, FR",
+    description: "Executed strategic initiatives for clients of the firm, developed actionable green tourism strategies, facilited relations between banks and start-ups, built market analysis for fishing industry",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Jul 2021 - Dec 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    title: "Visiting Student",
+    company: "San Diego State University",
+    location: "San Diego, CA",
+    description: "Participated in a unique academic exchange, focusing on subjects like Data Management and Business Modelling, while experiencing diverse perspectives and methodologies in an American educational setting.",
+    icon: React.createElement(FaPlane),
+    date: "2022",
   },
+  {
+    title: "Founder Associate",
+    company: "Milano Vice",
+    location: "Berlin, DE",
+    description: "Contributed to the strategic planning and operational execution for a virtual restaurant chain, overseeing the development of an expansion strategy for 55 locations, managing partner relationships, and co-organizing a successful €6.5M Series A fundraising campaign.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jun 2022 - Dec 2022",
+  },
+  {
+    title: "Data Consultant",
+    company: "Project A Ventures",
+    location: "Berlin, DE",
+    description: "Provided data consulting services to a $1 billion venture capital fund, designing performance data pipelines for portfolio companies, setting up KPIs, and collaborating with C-level executives to tailor solutions to their specific business needs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jan 2023 - Jul 2023",
+  },
+  {
+    title: "Strategy & Data Consultant",
+    company: "Independent",
+    location: "Remote",
+    description: "As a freelance consultant, I assist a diverse range of companies with strategic and data-related initiatives. My work encompasses areas such as client segmentation, data pipeline automation, and financial matters, including M&A transactions. ",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jul 2023 - Present",
+  },
+  
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Sales Planning for 200 boutiques",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed a comprehensive sales planning tool using Power BI and Excel to enhance forecasting accuracy and efficiency.",
+    tags: ["Power BI", "Excel", "Sales Strategy"],
+    imageUrl: salesPlanningImg , // Replace with actual image URL
   },
   {
-    title: "rmtDev",
+    title: "One-Click Dashboarding Solutions",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Created a streamlined dashboarding solution utilizing BigQuery template queries and an App Script web app for efficient data visualization and reporting.",
+    tags: ["BigQuery", "App Script", "Looker Studio"],
+    imageUrl: oneClickImg, // Replace with actual image URL
   },
   {
-    title: "Word Analytics",
+    title: "Partner Customer Service App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Designed a Twilio WhatsApp bot to improve partner customer service, significantly reducing response times and enhancing user satisfaction.",
+    tags: ["Twilio", "WhatsApp", "Slack"],
+    imageUrl: whatAppImg, // Replace with actual image URL
+  },
+  {
+    title: "Head Hunting Performance Dashboard",
+    description:
+      "Developed an end-to-end data pipeline and application for tracking head-hunting performance, enabling data-driven decision-making and enhanced operational efficiency.",
+    tags: ["App Script","dbt","BigQuery","Looker Studio"],
+    imageUrl: headHuntingImg, // Replace with actual image URL
+  },
+  {
+    title: "KPIs Cockpit design for ScaleUp",
+    description:
+      "Implemented a KPIs cockpit using Metabase and dbt, providing stakeholders with actionable insights through dynamic reporting.",
+    tags: ["Metabase", "dbt", "KPIs", "Reporting"],
+    imageUrl: buildingImg, // Replace with actual image URL
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+
+export const dataSkillsData = [
+  "Appscript",
+  "BigQuery",
   "PostgreSQL",
+  "GitHub",
+  "Metabase",
+  "PowerBI",
+  "LookerStudio",
+  "SQL",
+  "dbt",
   "Python",
-  "Django",
-  "Framer Motion",
+  "GA4",
+  "Google Ads",
+  "GTM Server Side",
+  "Facebook Ads",
+  "Pinterest Ads",
+  "Fivetran"
+
+] as const;
+
+export const stratSkillsData = [
+
+  "Financial Modeling",
+  "M&A Valuations",
+  "Scenario Building",
+  "Business Planning",
+  "Client Relationship Management",
+  "Stakeholders Management",
+  "Data Analysis",
+  "Data Visualisation",
+ 
+  "Excel",
+  "PowerPoint",
+  "Word",
+  "Google Workspace"
+
 ] as const;
