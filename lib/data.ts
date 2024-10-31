@@ -119,9 +119,9 @@ export const projectsData = [
     tags: ["BigQuery", "App Script", "Looker Studio"],
     imageUrl: oneClickImg, // Replace with actual image URL
     slug: "one-click-dashboarding",
-    concept: "Developed to simplify the dashboard creation process, this solution leverages templated BigQuery queries and a customizable interface, allowing users to generate visualizations without SQL knowledge, thereby improving data accessibility across departments.",
+    concept: "I collaborated with an external financial controller whose role is to assist various entrepreneurs with financial planning and visualization. To facilitate this, he provides his clients with dashboards. However, he faced challenges due to a time-consuming process of modeling and updating data through a slow Google Sheets system. The primary objective of this project was to streamline the process while maintaining his flexibility to update and modify workflows.",
     tools: ['BigQuery', 'App Script', 'Looker Studio', 'DaisyUI'],
-    results: "Implemented a one-click dashboarding solution that facilitates efficient data visualization and reporting, reducing the time needed to create and share insights.",
+    results: "To achieve this, I opted against using APIs to minimize maintenance and enable him to onboard more clients efficiently. The process involves the following steps: the financial controller downloads exports from the clients' accounting tools and uploads them to a custom-built Apps Script web app. The data is then cleaned, imported, and modeled using BigQuery. After this, he simply needs to refresh the dashboard to access the latest data. Some data, such as categorization, still comes from his side, which is managed through a connected Google Sheet. Additionally, the data is made available for more in-depth financial analysis in Excel format.<br>I implemented template queries, allowing him to deploy new clients in less than 15 minutes.",
     resultImage: ""
   },
   {
@@ -131,9 +131,9 @@ export const projectsData = [
     tags: ["Twilio", "WhatsApp", "Slack"],
     imageUrl: whatAppImg, // Replace with actual image URL
     slug: "customer-service-app",
-    concept: "The app aimed to streamline communication between partners and support teams using a WhatsApp-based bot, allowing for quick query resolutions and better engagement. Integrated Slack alerts ensured real-time team responses.",
+    concept: "I worked with a pizza ghost kitchen brand in Berlin that operates over 35 restaurants across Germany. The startup manages the entire supply chain and collaborates with more than 60 partners, including both restaurants and suppliers. To effectively address complaints and product issues, they required a streamlined process that could accommodate multiple languages—German, English, and Turkish. The solution needed to be easily accessible from mobile devices and user-friendly enough to discourage partners from directly calling.",
     tools: ['Twilio', "Python", 'WhatsApp API', 'Slack API'],
-    results: "Deployed a customer service app that enables partners to interact via WhatsApp, improving response times and overall user satisfaction.",
+    results: "The decision was made to use WhatsApp, as it is widely used in Germany and always accessible. I deployed a customer service bot that allows partners to report wasted products or logistical issues. All conversations are then transformed into tickets, which are routed to the appropriate team members based on the nature of the problem. Additionally, this system can initiate a claims process with the relevant suppliers.",
     resultImage: ""
   },
   {
