@@ -18,7 +18,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   const currentIndex = projectsData.findIndex(p => p.slug === params.slug)
   const nextProject = projectsData[currentIndex + 1] || projectsData[0]
-  const previousProject = projectsData[currentIndex - 1] || projectsData[0]
+  const previousProject = currentIndex === 0 ? projectsData[projectsData.length - 1] : projectsData[currentIndex - 1]
 
   return (
     <main className="flex flex-col items-center px-4 py-8 max-w-4xl mx-auto">

@@ -108,7 +108,7 @@ export const projectsData = [
     imageUrl: salesPlanningImg, // Replace with actual image URL
     slug: "sales-planning",
     concept: "The concept behind this tool was to create an adaptive forecasting system that integrates real-time data inputs, allowing sales teams to adjust their plans dynamically. Built with a focus on scalability, it accommodates both macro trends and micro-targeting at the boutique level.",
-    tools: ['Power BI', 'Excel'],
+    tools: ['Power BI', 'Excel', "PowerQuery"],
     results: "Deployed a sales planning tool that enhances forecasting accuracy and efficiency, allowing sales teams to plan effectively across 200 boutiques.",
     resultImage: ""
   },
@@ -120,7 +120,7 @@ export const projectsData = [
     imageUrl: oneClickImg, // Replace with actual image URL
     slug: "one-click-dashboarding",
     concept: "Developed to simplify the dashboard creation process, this solution leverages templated BigQuery queries and a customizable interface, allowing users to generate visualizations without SQL knowledge, thereby improving data accessibility across departments.",
-    tools: ['BigQuery', 'App Script', 'Looker Studio'],
+    tools: ['BigQuery', 'App Script', 'Looker Studio', 'DaisyUI'],
     results: "Implemented a one-click dashboarding solution that facilitates efficient data visualization and reporting, reducing the time needed to create and share insights.",
     resultImage: ""
   },
@@ -132,7 +132,7 @@ export const projectsData = [
     imageUrl: whatAppImg, // Replace with actual image URL
     slug: "customer-service-app",
     concept: "The app aimed to streamline communication between partners and support teams using a WhatsApp-based bot, allowing for quick query resolutions and better engagement. Integrated Slack alerts ensured real-time team responses.",
-    tools: ['Twilio', 'WhatsApp', 'Slack'],
+    tools: ['Twilio', "Python", 'WhatsApp API', 'Slack API'],
     results: "Deployed a customer service app that enables partners to interact via WhatsApp, improving response times and overall user satisfaction.",
     resultImage: ""
   },
@@ -140,11 +140,11 @@ export const projectsData = [
     title: "Head Hunting Performance Dashboard",
     description:
       "Developed an end-to-end data pipeline and application for tracking head-hunting performance, enabling data-driven decision-making and enhanced operational efficiency.",
-    tags: ["App Script", "dbt", "BigQuery", "Looker Studio"],
+    tags: ["App Script", "BigQuery", "Looker Studio"],
     imageUrl: headHuntingImg, // Replace with actual image URL
     slug: "head-hunting-dashboard",
     concept: "The dashboard's concept was to centralize recruitment performance data, offering insights into candidate pipeline metrics, conversion rates, and time-to-hire across departments, making it a strategic tool for talent management.",
-    tools: ['App Script', 'dbt', 'BigQuery', 'Looker Studio'],
+    tools: ['App Script', 'BigQuery', 'Looker Studio', 'DaisyUI', 'TailwindCSS'],
     results: "Implemented a performance dashboard that tracks head-hunting metrics, enabling data-driven decisions and enhanced operational efficiency.",
     resultImage: ""
   },
@@ -156,7 +156,7 @@ export const projectsData = [
     imageUrl: buildingImg, // Replace with actual image URL
     slug: "kpis-cockpit",
     concept: "Built as a centralized analytics tool, this cockpit is designed to aggregate key business KPIs, offering real-time visibility into performance metrics across all scale-up operations.",
-    tools: ['Metabase', 'dbt'],
+    tools: ['Metabase', 'dbt', 'Stripe', 'Amplitude'],
     results: "Deployed a KPIs cockpit that provides stakeholders with real-time insights and dynamic reporting capabilities for effective decision-making.",
     resultImage: ""
   },
