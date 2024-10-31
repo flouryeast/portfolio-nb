@@ -23,7 +23,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       <div className="flex flex-col items-center gap-6 w-full max-w-6xl">
         {projectsData.map((project, index) => (
           <motion.div
-        
+          key={project.slug}
          
         
           className="group mb-3 sm:mb-8 last:mb-0"
