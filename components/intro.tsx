@@ -27,7 +27,7 @@ export default function Intro() {
                         type: "tween",
                         duration: 0.2
                     }}>
-                <Image src="https://media.licdn.com/dms/image/v2/D4E03AQFmtOVP5Nlu_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674587011884?e=1729728000&v=beta&t=gWiGsHPNAK0aZIHUxZg1JG9ufIvNLm2tP0lxQ_zrn5s"
+                <Image src="https://media.licdn.com/dms/image/v2/D4E03AQFmtOVP5Nlu_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1674587011884?e=1735776000&v=beta&t=lhRtN765iOOh69HtW-dCeDF3By9dNRWe-1XW-k0ybEU"
                 alt="Noe portrait"
                 width="192"
                 height="192"
