@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { projectsData }  from '@/lib/data' 
+import { projectsData } from '@/lib/data'
 import { fadeInAnimationVariants } from '@/lib/animations'
 import { BsArrowRight } from 'react-icons/bs'
 
@@ -25,9 +25,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       <Link href="/projects" className='self-start group bg-gray-900 text-white px-7 py-3 mb-8 items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition'>
         ← Back to projects
       </Link>
-      
+
       <h1 className="text-3xl font-bold mb-8">{project.title}</h1>
-      
+
       <section className="w-full mb-12">
         <h2 className="text-2xl font-semibold mb-4">Concept</h2>
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -35,27 +35,27 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <p>{project.concept}</p>
           </div>
           <div className="md:w-1/2">
-            <Image 
-              src={project.imageUrl} 
-              alt="Concept illustration" 
-              width={400} 
-              height={300} 
+            <Image
+              src={project.imageUrl}
+              alt="Concept illustration"
+              width={400}
+              height={300}
               className="rounded-lg"
             />
           </div>
         </div>
       </section>
-      
+
       <section className="w-full mb-12">
         <h2 className="text-2xl font-semibold mb-4">Tools Used</h2>
         <ul className='flex flex-wrap justify-start gap-2 text-lg text-gray-800'>
           {project.tools.map((tool, index) => (
-            <motion.li 
-              className=' bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80' 
+            <motion.li
+              className=' bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
-              whileInView='animate' 
+              whileInView='animate'
               viewport={{
                 once: true,
               }}
@@ -66,43 +66,44 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           ))}
         </ul>
       </section>
-      
+
       <section className="w-full mb-12">
         <h2 className="text-2xl font-semibold mb-4">Results</h2>
         <p className="mb-4">{project.results}</p>
         {project.resultImage && (
-          <Image 
-            src={project.resultImage} 
-            alt="Project results" 
-             
+          <Image
+            src={project.resultImage}
+            alt="Project results"
+
             className="rounded-lg"
           />
         )}
       </section>
-      
-      <div className="flex justify-between items-center gap-44">
-      <button 
-        onClick={() => router.push(`/projects/${previousProject.slug}`)} // Add your previous project slug
-        className='bg-white text-gray-700 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
-      >
-        <BsArrowRight className='rotate-180 opacity-70 group-hover:translate-x-1 transition' /> {/* Rotate icon for "Previous" */}
-        Previous Project
-      </button>
 
-      <Link 
-        href="/#contact" 
-        className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition'
-      >
-        Contact Me
-      </Link>
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 mt-12">
+        <button
+          onClick={() => router.push(`/projects/${previousProject.slug}`)}
+          className='bg-white text-gray-700 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 w-full md:w-auto'
+        >
+          <BsArrowRight className='rotate-180 opacity-70 group-hover:translate-x-1 transition' />
+          Previous Project
+        </button>
 
-      <button 
-        onClick={() => router.push(`/projects/${nextProject.slug}`)}
-        className='bg-white text-gray-700 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
-      >
-        Next Project <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
-      </button>
-    </div>
+        <Link
+          href="/#contact"
+          className='group bg-gray-900 text-white px-7 py-4 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition w-full md:w-auto'
+        >
+          Contact Me
+        </Link>
+
+        <button
+          onClick={() => router.push(`/projects/${nextProject.slug}`)}
+          className='bg-white text-gray-700 hover:text-gray-950 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 w-full md:w-auto'
+        >
+          Next Project <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
+        </button>
+      </div>
+
     </main>
   )
 }

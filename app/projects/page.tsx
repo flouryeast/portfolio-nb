@@ -1,12 +1,9 @@
 'use client'
-
-import { useRouter } from 'next/navigation'
+    
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { projectsData }  from '@/lib/data' 
-import { fadeInAnimationVariants } from '@/lib/animations'
-import { BsArrowRight } from 'react-icons/bs'
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
    
