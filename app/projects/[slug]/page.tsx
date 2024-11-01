@@ -7,6 +7,8 @@ import { motion } from 'framer-motion'
 import { projectsData } from '@/lib/data'
 import { fadeInAnimationVariants } from '@/lib/animations'
 import { BsArrowRight } from 'react-icons/bs'
+import Head from 'next/head'
+
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const router = useRouter()
@@ -22,6 +24,15 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   return (
     <main className="flex flex-col items-center px-4 py-8 max-w-4xl mx-auto">
+      <Head>
+        <title>{project.title} - Noé Bernard Portfolio</title>
+        <meta name="description" content={project.description || 'Detailed project information'} />
+        <meta property="og:title" content={project.title} />
+        <meta property="og:description" content={project.description || 'Detailed project information'} />
+        <meta property="og:image" content={project.imageUrl.src} />
+        <meta property="og:url" content={`https://noe-bernard.vercel.app/projects/${project.slug}`} />
+        <meta property="og:type" content="website" />
+      </Head>
       <Link href="/projects" className='self-start group bg-gray-900 text-white px-7 py-3 mb-8 items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition'>
         ← Back to projects
       </Link>
