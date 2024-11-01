@@ -4,11 +4,11 @@ import { FaReact } from "react-icons/fa";
 import { FaPlane } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-import buildingImg from "@/public/building.jpg";
-import headHuntingImg from '@/public/headhunting.jpg';
-import oneClickImg from '@/public/onclick.jpg';
-import salesPlanningImg from '@/public/salesplanning.jpg';
-import whatAppImg from '@/public/whatsapp.jpg';
+import buildingImg from "@/public/building.png";
+import headHuntingImg from '@/public/headhunting.png';
+import oneClickImg from '@/public/onclick.png';
+import salesPlanningImg from '@/public/salesplanning.png';
+import whatAppImg from '@/public/whatsapp.png';
 import seoImg from '@/public/SEO_illustration.png'
 
 export const links = [
