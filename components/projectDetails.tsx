@@ -67,7 +67,16 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
       <section className="w-full mb-12">
         <h2 className="text-2xl font-semibold mb-4">Results</h2>
-        <p className="mb-4">{project.results}</p>
+        <p className="mb-12">{project.results}</p>
+        <div className='flex justify-start'>
+        {project.link && (
+          <Link
+            href={project.link}
+            className="  bg-gray-900 text-white px-7 py-4 flex  items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 transition w-full md:w-auto"
+          >Voir site</Link> 
+        )}
+        </div>
+
         {project.resultImage && (
           <Image
             src={project.resultImage}
