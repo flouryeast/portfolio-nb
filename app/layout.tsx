@@ -1,4 +1,4 @@
-import Header from '@/components/header'
+
 import './globals.css'
 import { Inter } from 'next/font/google'
 import ActiveSectionContextProvider from '@/context/active-section-context'
@@ -7,24 +7,10 @@ import Footer from '@/components/footer'
 import ThemeSwitch from '@/components/theme-switch'
 import ThemeContextProvider from '@/context/theme-context'
 import { Analytics } from "@vercel/analytics/react"
-import { Metadata } from 'next'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Noé Bernard - Data Consultant & Portfolio',
-  description: 'Noé Bernard is a data consultant specializing in data analysis, visualization, and project management. Explore his portfolio showcasing various projects and skills.',
-  verification: {
-    google: 'LKaB2KPOAZvZAPBw3dEavgpy5eSc0wWiAht1Alxc168',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: 'https://noe-bernard.vercel.app',
-  },
-}
 
 export default function RootLayout({
   children,

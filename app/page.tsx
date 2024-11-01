@@ -6,8 +6,23 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
+import { Metadata } from 'next'
 
 
+export const metadata: Metadata = {
+  title: 'Noé Bernard - Data & Strategy Consultant ',
+  description: 'Noé Bernard is a data consultant specializing in data analysis, visualization, and project management. Explore his portfolio showcasing various projects and skills.',
+  verification: {
+    google: 'LKaB2KPOAZvZAPBw3dEavgpy5eSc0wWiAht1Alxc168',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://noe-bernard.vercel.app',
+  },
+}
 
 export default function Home() {
   return (

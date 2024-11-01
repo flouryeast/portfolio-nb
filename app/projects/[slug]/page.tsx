@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${project.title} - Noé Bernard Portfolio`,
     description: project.description || 'Detailed project information',
+    verification: {
+      google: 'LKaB2KPOAZvZAPBw3dEavgpy5eSc0wWiAht1Alxc168',
+    },
     openGraph: {
       title: project.title,
       description: project.description || 'Detailed project information',
