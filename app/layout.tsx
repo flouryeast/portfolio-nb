@@ -26,10 +26,11 @@ export default function RootLayout({
     <html lang="en" className='!scroll-smooth'>
             <Head>
                 <title>Noé Bernard - Data Consultant & Portfolio</title>
+                <meta name="google-site-verification" content="LKaB2KPOAZvZAPBw3dEavgpy5eSc0wWiAht1Alxc168" />
                 <meta name="description" content="Noé Bernard is a data consultant specializing in data analysis, visualization, and project management. Explore his portfolio showcasing various projects and skills." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://noe-bernard.vercel.app" />
-                <meta name="google-site-verification" content="LKaB2KPOAZvZAPBw3dEavgpy5eSc0wWiAht1Alxc168" />
+                
             </Head>
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative   dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
         <div className='bg-red-100 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]'></div>
